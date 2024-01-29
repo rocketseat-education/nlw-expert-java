@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres_nlw:
+    container_name: postgres_nlw
+    image: postgres
+    ports:
+      - 5434:5432
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=pg_nlw
